@@ -1,0 +1,66 @@
+.header {
+    background: #E1EDE6;
+    padding: 33px 32px;
+
+
+    a:hover {
+        color: #598D66;
+        transition: 500ms;
+    }
+
+
+
+    &__logo-title {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 35px;
+        height: 35px;
+        margin-right: 8px;
+
+
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+        color: #598D66;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 900px auto;
+    }
+
+    @media(max-width:500px){
+        &__wrapper{
+            max-width: 500px;
+        }
+    }
+
+
+
+    &__menu {
+        display: grid;
+        grid-template-columns: 100fr 500fr 500fr 400fr;
+
+
+    }
+
+    &__item {
+        margin-right: 60px;
+    }
+
+    &__shopping {
+        max-width: 22px;
+        margin-right: 0px;
+        border: 0;
+        background: transparent;
+
+    }
+
+
+
+}

@@ -1,0 +1,42 @@
+.section {
+
+
+    &__title {
+        color: #2C2D35;
+        font-size: 40px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 800px 450px;
+    }
+
+    &__menu {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+
+    }
+
+
+    &__item {
+        border-radius: 20px;
+        background: #D4E8D9;
+        padding: 10px 20px;
+        margin-right: 32px;
+
+    }
+
+    &__button {
+        font-size: 20px;
+        font-family: "Raleway";
+        background: transparent;
+        border: none;
+        color: #2C2D35;
+
+    }
+}

@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #2C2D35;
+  background: #F4F6F5;
+}
+
+ol,
+li {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1110px;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
+
+.header {
+  background: #e1ede6;
+  padding: 33px 0;
+}
+.header a {
+  transition: 0.2s;
+}
+.header a:hover {
+  color: #598d66;
+  transition: 0.2s;
+}
+.header__logo-title {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  width: 35px;
+  height: 35px;
+  margin-right: 8px;
+}
+.header__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #598d66;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 0 60px;
+}
+.header__shopping {
+  max-width: 22px;
+  margin-right: 0px;
+  border: 0;
+  background: transparent;
+}
+
+.article {
+  color: #2C2D35;
+  background: #F4F6F5;
+  height: 620px;
+  padding-bottom: 39px;
+}
+.article__main {
+  display: flex;
+  justify-content: space-between;
+}
+.article__img {
+  margin-right: 30px;
+}
+.article__titles {
+  padding-top: 145px;
+}
+.article__title {
+  width: 540px;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 110%;
+  margin-bottom: 20px;
+}
+.article__green {
+  color: #598D66;
+}
+.article__subtitle {
+  color: #86928B;
+  font-weight: 500;
+  line-height: 150%;
+  margin-bottom: 60px;
+  font-size: 18px;
+}
+.article__button {
+  color: #598D66;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  height: 65px;
+  padding: 20px 60px;
+  align-items: center;
+  border: 1px solid #598D66;
+  background: transparent;
+}
+
+.section {
+  padding-top: 30px;
+}
+.section__title {
+  color: #2C2D35;
+  font-size: 40px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+}
+.section__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section__menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 32px;
+}
+.section__button {
+  height: 43px;
+  padding: 5px 20px;
+  border-radius: 1000px;
+  font-size: 20px;
+  font-family: "Raleway";
+  background: #D4E8D9;
+  border: 0;
+  color: #2C2D35;
+  line-height: normal;
+}/*# sourceMappingURL=style.css.map */

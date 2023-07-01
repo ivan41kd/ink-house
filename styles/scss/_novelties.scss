@@ -1,0 +1,56 @@
+.novelties {
+    height: 574px;
+    background-image: url("./novelties.jpg");
+    margin-bottom:70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+
+
+
+
+    &__logo-title {
+        display: flex;
+        width: 521px;
+        padding-top: 70px;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &__logo {
+        margin-right: 20px;
+    }
+
+
+
+    &__title {
+        color: #F4F6F5;
+        font-size: 40px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: 100%;
+    }
+
+    &__description {
+        color: #FFF;
+        font-size: 18px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: 150%;
+        max-width: 540px;
+        margin-bottom:81px
+    }
+
+    &__more {
+        color: #2C2D35;
+        font-size: 20px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: normal;
+        background: #EEDB6D;
+        padding: 20px 60px;
+        height: 65px;
+        border: none;
+    }
+}

@@ -2,77 +2,235 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/scss/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap" rel="stylesheet">
-    <title>Ink.House</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/scss/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap" rel="stylesheet" />
+  <title>Ink.House</title>
 </head>
 
 <body>
-    <main>
-        <header class="header">
-            <div class="container">
-                <div class="header__wrapper">
-                    <div class="header__logo-title">
-                        <img src="./img/logo/Star 1.svg" alt="logo" class="header__logo"><span
-                            class="header__title">Ink.
-                            House </span>
-                    </div>
-                    <div class="header__nav">
-                        <ul class="header__menu">
-                            <li class="header__item"><a href="#">Репродукции</a></li>
-                            <li class="header__item"><a href="#">Новинки</a> </li>
-                            <li class="header__item"><a href="#">О нас</a> </li>
-                            <li class="header__item"> <button class="header__shopping"><img
-                                        src="./img/shopping/shopping-cart.svg" alt="shopping"> </button>
-                        </ul>
-                    </div>
-                </div>
-        </header>
-
-
-        <article class="article">
-            <div class="container">
-                <div class="article__wrapper">
-                    <div class="article__main">
-                        <img src="./img/article/bird.png" alt="bird" class="article__img">
-                        <div class="article__titles">
-                            <h1 class="article__title">Реплики картин от <span class="article__green">Ink. House</span>
-                            </h1>
-                            <p class="article__subtitle"> Высокое качество отрисовки на плотной бумаге или льняном
-                                холсте.
-                                Редкие произведения, доступные цены.</p>
-
-                            <button href="#" class="article__button">Продукция</button>
-                        </div>
-
-                    </div>
-                </div>
-        </article>
-
-        <section class="section">
-            <div class="section__container container">
-                <div class="section__wrapper">
-                    <h2 class="section__title"> Репродукции</h2>
-                    <nav class="section__nav">
-                        <ul class="section__menu">
-                            <li class="section__item"> <button href="#" class="section__button">Франция</button></li>
-                            <li class="section__item"> <button href="#" class="section__button">Германия</button></li>
-                            <li class="section__item"> <button href="#" class="section__button">Англия</button></li>
-                        </ul>
-                    </nav>
-        </section>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header__logo-title">
+          <img src="./img/logo/Star 1.svg" alt="logo" class="header__logo" /><span class="header__title">Ink. House
+          </span>
         </div>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__item"><a href="#products">Репродукции</a></li>
+            <li class="header__item"><a href="#novelties">Новинки</a></li>
+            <li class="header__item"><a href="#aboutus">О нас</a></li>
+            <li class="header__item">
+              <button class="header__shopping">
+                <img src="./img/shopping/shopping-cart.svg" alt="shopping" />
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section__wrapper">
+          <div class="section__main">
+            <img src="./img/article/bird.png" alt="bird" class="section__img" />
+            <div class="section__titles">
+              <h1 class="section__title">
+                Реплики картин от
+                <span class="section__green">Ink. House</span>
+              </h1>
+              <p class="section__subtitle">
+                Высокое качество отрисовки на плотной бумаге или льняном
+                холсте. Редкие произведения, доступные цены.
+              </p>
+              <button class="section__button">Продукция</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <article id="products" class="products">
+      <div class="article__container container">
+        <div class="article__wrapper">
+          <h2 class="article__title">Репродукции</h2>
+          <nav class="article__nav">
+            <ul class="article__menu">
+              <li class="article__item">
+                <button class="article__button">Франция</button>
+              </li>
+              <li class="article__item">
+                <button class="article__button">Германия</button>
+              </li>
+              <li class="article__item">
+                <button class="article__button">Англия</button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="products__wrapper">
+          <div class="products__layout">
+            <div class="products__content">
+              <img src="./img/products/hunt.jpg" alt="hunt" class="products__img">
+              <p class="products__author"> Марсель Руссо</p>
+              <p class="products__name"> Охота Амура</p>
+              <p class="products__material"> Холст, масло (50х80)</p>
+              <p class="products__price"> 14 500 руб</p>
+              <button class="products__buy">В корзину </button>
+            </div>
+          </div>
+          <div class="products__layout">
+            <div class="products__content">
+              <img src="./img/products/ladywithdog.jpg" alt="lady" class="products__img">
+              <p class="products__author"> Анри Селин</p>
+              <p class="products__name"> Дама с собачкой</p>
+              <p class="products__material"> Акрил, бумага (50х80)</p>
+              <p class="products__price"> 16 500 руб</p>
+              <button class="products__buy">В корзину </button>
+            </div>
+          </div>
+          <div class="products__layout">
+            <div class="products__content">
+              <img src="./img/products/procedure.jpg" alt="procedure" class="products__img">
+              <p class="products__author"> Франсуа Дюпон</p>
+              <p class="products__name"> Процедура</p>
+              <p class="products__material"> Цветная литография (40х60) </p>
+              <p class="products__price"> 20 000 руб</p>
+              <button class="products__buy">В корзину </button>
+            </div>
+          </div>
+          <div class="products__layout">
+            <div class="products__content">
+              <img src="./img/products/rose.jpg" alt="rose" class="products__img">
+              <p class="products__author"> Луи Детуш</p>
+              <p class="products__name"> Роза</p>
+              <p class="products__material"> Бумага, акрил (50х80) </p>
+              <p class="products__price"> 12 000 руб</p>
+              <button class="products__buy">В корзину </button>
+            </div>
+          </div>
+          <div class="products__layout">
+            <div class="products__content">
+              <img src="./img/products/birdmeal.jpg" alt="birdmeal" class="products__img">
+              <p class="products__author"> Франсуа Дюпон</p>
+              <p class="products__name"> Птичья трапеза</p>
+              <p class="products__material"> Цветная литография (40х60) </p>
+              <p class="products__price"> 22 500 руб</p>
+              <button class="products__buy">В корзину </button>
+            </div>
+          </div>
+          <div class="products__layout">
+            <div class="products__content">
+              <img src="./img/products/paysagewithfish.jpg" alt="paysagewithfish" class="products__img">
+              <p class="products__author"> Пьер Моранж</p>
+              <p class="products__name"> Пейзаж с рыбой</p>
+              <p class="products__material"> Цветная литография (40х60) </p>
+              <p class="products__price"> 20 000 руб</p>
+              <button class="products__buy">В корзину </button>
+            </div>
+          </div>
+        </div>
+    </article>
+    <article id="novelties" class="novelties">
+      <div class="novelties__container container">
+        <div class="novelties__wrapper">
+          <div class="novelties__logo-title">
+            <img src="./img/logo/logogold.svg" alt="logogold" class="novelties__logo">
+            <h2 class="novelties__title">Новая коллекция французских авторов </h2>
+          </div>
+          <div class="novelties__description">
+            <p>Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым свершениям, которые, в свою
+              очередь, должны быть заблокированы в рамках своих собственных рациональных ограничений.<br> Принимая во
+              внимание показатели успешности, граница обучения кадров предопределяет высокую востребованность
+              направлений прогрессивного развития. </p>
+          </div>
+          <button class="novelties__more">Ознакомиться </button>
+        </div>
+      </div>
+    </article>
+
+
+    <section class="aboutus" id="aboutus">
+      <div class="aboutus__container container">
+        <div class="aboutus__wrapper">
+          <div class="aboutus__main">
+            <img src="./img/aboutus/hand.png" alt="hand" class="aboutus__img-hand">
+            <div class="aboutus__info">
+              <h2 class="aboutus__title"> Наша команда</h2>
+              <p class="aboutus__subtitle">Значимость этих проблем настолько очевидна, что базовый вектор развития
+                позволяет оценить значение экспериментов, поражающих по своей масштабности и грандиозности. Мы вынуждены
+                отталкиваться от того, что консультация с широким активом. </p>
+              <div class="aboutus__team">
+                <img src="./img/aboutus/teamworker1.png" alt="teamworker1" class="aboutus__teamworkers">
+                <img src="./img/aboutus/teamworker2.png" alt="teamworker2" class="aboutus__teamworkers">
+                <img src="./img/aboutus/teamworker3.png" alt="teamworker3" class="aboutus__teamworkers">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__wrapper">
+        <div class="footer__left">
+          <div class="footer__logo-title">
+            <img src="./img/logo/Star 1.svg" alt="logo" class="footer__logo" /><span class="footer__title">Ink. House
+            </span>
+          </div>
+          <div class="footer__contact">
+            <p class="footer__phone"> +7 (999) 543-54-54</p>
+            <p class="footer__workshop">Мастерская</p>
+          </div>
+        </div>
+        <nav class="footer__nav">
+          <div class="footer__menu">
+            <div class="footer__category">
+              <h3 class="footer__nav-name">Репродукции</h3>
+              <ul class="footer__list">
+                <li class="footer__item">Франция</li>
+                <li class="footer__item">Германия</li>
+                <li class="footer__item">Англия</li>
+              </ul>
+            </div>
+            <div class="footer__category">
+              <h3 class="footer__nav-name">Новинки</h3>
+              <ul class="footer__list">
+                <li class="footer__item">2021</li>
+                <li class="footer__item">2020</li>
+              </ul>
+            </div>
+            <div class="footer__category">
+              <h3 class="footer__nav-name">О нас</h3>
+              <ul class="footer__list">
+                <li class="footer__item">Художники</li>
+                <li class="footer__item">Менеджеры</li>
+              </ul>
+            </div>
+
+        </nav>
+        <div class="footer__social">
+          <img src="./img/footer/facebook.svg" alt="facebook" class="footer__icon">
+          <img src="./img/footer/instagram.svg" alt="instagram" class="footer__icon">
+          <img src="./img/footer/youtube.svg" alt="youtube" class="footer__icon">
+        </div>
+        <div class="footer__end">
+          <p class="footer__name">Ink. House ® </p>
+          <p class="footer__rights">All rights reserved</p>
 
         </div>
+      </div>
 
-
-    </main>
-
+    </div>
+  </footer>
 </body>
 
 </html>

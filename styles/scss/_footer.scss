@@ -1,0 +1,123 @@
+.footer {
+    background: #E1EDE6;
+    padding: 23px 0px 23px;
+
+
+
+
+    &__logo-title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 41px;
+    }
+
+    &__logo {
+        margin-right: 8px;
+
+    }
+
+    &__title {
+        color: #598D66;
+        font-size: 20px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__phone {
+        color: #2C2D35;
+        font-size: 20px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &__workshop {
+        color: #86928B;
+        font-size: 18px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: normal;
+        margin-top: 8px;
+    }
+
+
+
+
+    &__nav-name {
+        color: #2C2D35;
+        font-size: 20px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: normal;
+        padding-bottom: 6px;
+    }
+
+    &__item {
+        color: #86928B;
+        font-size: 18px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: 150%;
+        padding-bottom: 6px;
+    }
+
+    &__menu {
+        display: flex;
+    }
+
+    &__wrapper {
+        display: flex;
+    }
+
+
+    &__category {
+        padding-right: 58px;
+
+    }
+
+    &__social {
+        display: flex;
+
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 30px;
+        border-radius: 30px;
+    }
+
+
+    &__left {
+        padding-right: 142px;
+    }
+
+    &__end{
+    }
+
+    &__name {
+        color: #86928B;
+        font-size: 12px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: 120%;
+    }
+
+    &__rights {
+        color: #86928B;
+        font-size: 12px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: 120%;
+    }
+
+
+
+
+
+
+
+
+
+}

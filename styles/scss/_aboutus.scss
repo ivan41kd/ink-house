@@ -1,0 +1,50 @@
+.aboutus {
+
+    margin-bottom: 70px;
+
+    &__main {
+        display: flex;
+    }
+
+    &__img-hand {
+        margin-right: 30px;
+    }
+
+    &__info {
+        width: 635px;
+        align-items: flex-start;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-end
+    }
+
+    &__title {
+        color: #2C2D35;
+        font-size: 40px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: 110%;
+        margin-bottom: 20px;
+    }
+
+
+    &__subtitle {
+        color: #2C2D35;
+        font-size: 18px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        line-height: 150%;
+        margin-bottom: 20px;
+    }
+
+    &__team {
+        display: flex;
+    }
+
+    &__teamworkers {
+        margin-right: 30px;
+    }
+
+
+
+}

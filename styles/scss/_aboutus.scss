@@ -8,6 +8,7 @@
 
     &__img-hand {
         margin-right: 30px;
+        
     }
 
     &__info {
@@ -21,6 +22,7 @@
         font-weight: 500;
         line-height: 110%;
         margin-bottom: 20px;
+        width: 281px;
     }
 
     &__wrapper{
@@ -37,6 +39,7 @@
         font-weight: 500;
         line-height: 150%;
         margin-bottom: 20px;
+        width: 635px;
     }
 
     &__team {
@@ -45,10 +48,14 @@
 
     &__teamworkers {
         margin-right: 30px;
+        
+        &:nth-last-child(1){
+            margin-right: 0;
+        }
     }
 
     &__info{
-        padding-top:124px;
+        margin-top:124px;
     }
 
 

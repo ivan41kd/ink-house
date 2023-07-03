@@ -2,9 +2,6 @@
     background: #E1EDE6;
     padding: 23px 0px 23px;
 
-
-
-
     &__logo-title {
         display: flex;
         align-items: center;
@@ -51,7 +48,16 @@
         font-weight: 500;
         line-height: normal;
         padding-bottom: 6px;
+        transition: 0.2s;
+        
+        &:hover{
+            color: #598d66;
+            transition: 0.2s;
+        }
+
+
     }
+    
 
     &__item {
         color: #86928B;
@@ -64,6 +70,7 @@
 
     &__menu {
         display: flex;
+        width: 445px;
     }
 
     &__wrapper {
@@ -74,6 +81,10 @@
 
     &__category {
         padding-right: 58px;
+        &:nth-child(3) {
+            padding-right:0px;
+
+        }
 
     }
 
@@ -83,15 +94,13 @@
     }
 
     &__icon {
-        width: 24px;
-        height: 24px;
         margin-right: 30px;
-        border-radius: 30px;
     }
 
     &__icons{
         display: flex;
         margin-bottom:10px;
+
     }
 
 
@@ -113,6 +122,8 @@
         font-weight: 500;
         line-height: 120%;
     }
+
+
 
 
 

@@ -11,11 +11,7 @@
     }
 
     &__info {
-        width: 635px;
-        align-items: flex-start;
-        display: inline-flex;
-        flex-direction: column;
-        justify-content: flex-end
+        height: 272px;
     }
 
     &__title {
@@ -25,6 +21,11 @@
         font-weight: 500;
         line-height: 110%;
         margin-bottom: 20px;
+    }
+
+    &__wrapper{
+        width: 1110px;
+        height: 440px;
     }
 
 
@@ -43,6 +44,10 @@
 
     &__teamworkers {
         margin-right: 30px;
+    }
+
+    &__info{
+        padding-top:124px;
     }
 
 

@@ -223,7 +223,6 @@ a {
 .novelties {
   height: 574px;
   background-image: url("./novelties.jpg");
-  margin-bottom: 70px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -276,11 +275,7 @@ a {
   margin-right: 30px;
 }
 .aboutus__info {
-  width: 635px;
-  align-items: flex-start;
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  height: 272px;
 }
 .aboutus__title {
   color: #2C2D35;
@@ -289,6 +284,10 @@ a {
   font-weight: 500;
   line-height: 110%;
   margin-bottom: 20px;
+}
+.aboutus__wrapper {
+  width: 1110px;
+  height: 440px;
 }
 .aboutus__subtitle {
   color: #2C2D35;
@@ -303,6 +302,9 @@ a {
 }
 .aboutus__teamworkers {
   margin-right: 30px;
+}
+.aboutus__info {
+  padding-top: 124px;
 }
 
 .footer {
@@ -360,12 +362,13 @@ a {
 }
 .footer__wrapper {
   display: flex;
+  justify-content: space-between;
 }
 .footer__category {
   padding-right: 58px;
 }
 .footer__social {
-  display: flex;
+  max-width: 132px;
 }
 .footer__icon {
   width: 24px;
@@ -373,8 +376,9 @@ a {
   margin-right: 30px;
   border-radius: 30px;
 }
-.footer__left {
-  padding-right: 142px;
+.footer__icons {
+  display: flex;
+  margin-bottom: 10px;
 }
 .footer__name {
   color: #86928B;
@@ -382,6 +386,7 @@ a {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   line-height: 120%;
+  margin-bottom: 6px;
 }
 .footer__rights {
   color: #86928B;

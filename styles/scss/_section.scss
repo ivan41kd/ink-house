@@ -1,58 +1,121 @@
 .section {
-    color: #2C2D35;
-    background: #F4F6F5;
-    height: 620px;
+  color: #2c2d35;
+  background: #f4f6f5;
+  padding-bottom: 30px;
 
+  $main-color: #598d66;
 
-    $main-color: #598D66;
+  &__main {
+    display: flex;
+  }
+
+  &__img {
+    margin-right: 30px;
+    max-height: 621px;
+    max-width: 540px;
+  }
+
+  &__titles {
+    padding-top: 145px;
+  }
+
+  &__title {
+    max-width: 540px;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 110%;
+    margin-bottom: 20px;
+  }
+
+  &__green {
+    color: $main-color;
+  }
+
+  &__subtitle {
+    color: #86928b;
+    font-weight: 500;
+    line-height: 150%;
+    margin-bottom: 60px;
+    font-size: 18px;
+  }
+
+  &__button {
+    color: $main-color;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    height: 65px;
+    padding: 20px 60px;
+    align-items: center;
+    border: 1px solid $main-color;
+    background: transparent;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    max-width: 768px;
 
     &__main {
-        display: flex;
-        justify-content: space-between;
-
+      max-width: 510px;
     }
 
     &__img {
-        margin-right: 30px;
+      width: 330px;
+      height: 380px;
     }
 
-
     &__titles {
-        padding-top: 145px;
+      padding-top: 35px;
     }
 
     &__title {
-        width: 540px;
-        font-size: 60px;
-        font-weight: 500;
-        line-height: 110%;
-        margin-bottom: 20px;
-    }
-
-    &__green {
-        color: $main-color
+      font-size: 40px;
+      max-width: 330px;
     }
 
     &__subtitle {
-        color: #86928B;
-        font-weight: 500;
-        line-height: 150%;
-        margin-bottom: 60px;
-        font-size: 18px;
+      margin-bottom: 40px;
+    }
+  }
+}
 
+@media (max-width: 720px) {
+  .section {
+    padding-bottom: 50px;
+    max-width: 610px;
+
+    &__img {
+      max-width: 195px;
+      max-height: 239px;
+      margin-top: 50px;
+    }
+
+    &__titles {
+      padding-top: 50px;
+    }
+
+    &__title {
+      font-size: 36px;
+      max-width: 285px;
+      margin-bottom: 10px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      margin-bottom: 10px;
+      max-width: 285px;
     }
 
     &__button {
-        color: $main-color;
-        font-size: 20px;
-        font-family: "Raleway", sans-serif;
-        font-weight: 500;
-        height: 65px;
-        padding: 20px 60px;
-        align-items: center;
-        border: 1px solid $main-color;
-        background: transparent;
-
+      font-size: 18px;
+      padding: 20px 60px;
+      width: 178px;
+      text-align: center;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-
+  }
 }

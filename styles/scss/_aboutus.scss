@@ -1,63 +1,131 @@
 .aboutus {
+  padding-bottom: 70px;
+  padding-top: 70px;
 
-    margin-bottom: 70px;
+  &__main {
+    display: flex;
+    max-width: 1110px;
+  }
+
+  &__img-hand {
+    margin-right: 30px;
+    width: 361px;
+    height: 445px;
+  }
+
+  &__info {
+    min-width: 635px;
+  }
+
+  &__title {
+    color: #2c2d35;
+    font-size: 40px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    line-height: 110%;
+    margin-bottom: 20px;
+  }
+
+  &__wrapper {
+    width: 1110px;
+  }
+
+  &__subtitle {
+    color: #2c2d35;
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    line-height: 150%;
+    margin-bottom: 20px;
+    width: 635px;
+  }
+
+  &__team {
+    display: flex;
+    min-width: 300px;
+  }
+
+  &__teamworkers {
+    margin-right: 30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    background-color: lightblue;
+    font-size: 8px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+  }
+
+  &__info {
+    margin-top: 124px;
+  }
+}
+
+@media (max-width: 720px) {
+  .aboutus {
+    padding-top: 50px;
 
     &__main {
-        display: flex;
+      flex-direction: column;
+      max-width: 510px;
     }
-
-    &__img-hand {
-        margin-right: 30px;
-        
+    &__wrapper {
+      width: 510px;
     }
 
     &__info {
-        height: 272px;
+      min-width: 510px;
+      margin-top: 30px;
     }
 
     &__title {
-        color: #2C2D35;
-        font-size: 40px;
-        font-family: "Raleway", sans-serif;
-        font-weight: 500;
-        line-height: 110%;
-        margin-bottom: 20px;
-        width: 281px;
+      font-size: 24px;
     }
-
-    &__wrapper{
-        width: 1110px;
-        height: 440px;
-        margin-top:70px;
-    }
-
 
     &__subtitle {
-        color: #2C2D35;
-        font-size: 18px;
-        font-family: "Raleway", sans-serif;
-        font-weight: 500;
-        line-height: 150%;
-        margin-bottom: 20px;
-        width: 635px;
+      width: 510px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutus {
+    &__main {
+      flex-direction: column;
     }
 
-    &__team {
-        display: flex;
+    &__img-hand {
+      max-height: 510px;
+      max-width: 413px;
     }
 
-    &__teamworkers {
-        margin-right: 30px;
-        
-        &:nth-last-child(1){
-            margin-right: 0;
-        }
+    &__info {
+      margin-top: 40px;
+      max-width: 690px;
     }
 
-    &__info{
-        margin-top:124px;
+    &__title {
+      max-width: 211px;
+      font-size: 30px;
+      margin-bottom: 30px;
     }
 
+    &__subtitle {
+      font-size: 18px;
+      max-width: 635px;
+    }
 
-
+    &__wrapper {
+      max-width: 690px;
+    }
+  }
 }

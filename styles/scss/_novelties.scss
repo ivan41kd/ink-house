@@ -1,55 +1,88 @@
 .novelties {
-    height: 574px;
-    background-image: url("./novelties.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("./novelties.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__logo-title {
+    display: flex;
+    max-width: 521px;
+    padding-top: 70px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  &__logo {
+    margin-right: 20px;
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  &__title {
+    color: #f4f6f5;
+    font-size: 40px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    line-height: 100%;
+    margin-bottom: 10px;
+    width: 421px;
+  }
+
+  &__description {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    line-height: 150%;
+    max-width: 540px;
+    margin-bottom: 81px;
+    min-height: 209px;
+  }
+
+  &__more {
+    color: #2c2d35;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    line-height: normal;
+    background: #eedb6d;
+    padding: 20px 60px;
+    height: 65px;
+    border: none;
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 720px) {
+  .novelties {
     background-size: cover;
-    
-
-
-
-
+    max-width: 720px;
+    height: 502px;
     &__logo-title {
-        display: flex;
-        width: 521px;
-        padding-top: 70px;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-    &__logo {
-        margin-right: 20px;
-    }
-
-
-
-    &__title {
-        color: #F4F6F5;
-        font-size: 40px;
-        font-family: "Raleway", sans-serif;
-        font-weight: 500;
-        line-height: 100%;
+      min-width: 331px;
+      padding-top: 51px;
     }
 
     &__description {
-        color: #FFF;
-        font-size: 18px;
-        font-family: "Raleway", sans-serif;
-        font-weight: 500;
-        line-height: 150%;
-        max-width: 540px;
-        margin-bottom:81px
+      margin-bottom: 20px;
     }
 
     &__more {
-        color: #2C2D35;
-        font-size: 20px;
-        font-family: "Raleway", sans-serif;
-        font-weight: 500;
-        line-height: normal;
-        background: #EEDB6D;
-        padding: 20px 60px;
-        height: 65px;
-        border: none;
+      display: flex;
+      width: 190px;
+      height: 50px;
+      padding: 20px 60px;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+      margin-bottom: 50px;
     }
+  }
+}
+
+@media (max-width:768px){
+  .novelties{
+    width: 768px;
+  }
 }

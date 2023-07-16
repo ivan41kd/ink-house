@@ -5,19 +5,18 @@
   &__wrapper {
     padding-top: 30px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-gap: 30px;
-  }
-
-  &__layout {
-    min-height: 730px;
-    background: #e1ede6;
-    padding: 20px 20px 30px;
-    max-width: 350px;
   }
 
   &__img {
     margin-bottom: 20px;
+    width: 100%;
+    min-height: 422px;
+    text-align: center;
+    background-color: lightgrey;
+    object-fit: cover;
+    object-position: center;
   }
 
   &__author {
@@ -83,6 +82,17 @@
     border: 1px solid #598d66;
     background: transparent;
     margin-top: auto;
+    transition: 0.2s;
+    &:hover {
+      background: #376b44;
+      color: white;
+      transition: 0.2s;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
   }
 
   &__content {
@@ -92,6 +102,46 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    background: #e1ede6;
+    padding: 20px 20px 30px;
+    width: 100%;
+  }
+}
+
+.section {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    color: #2c2d35;
+    font-size: 40px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    line-height: 110%;
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 32px;
+  }
+  &__button {
+    height: 43px;
+    padding: 5px 20px;
+    border-radius: 1000px;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    background: #d4e8d9;
+    border: 0;
+    color: #2c2d35;
+    line-height: normal;
+    transition: 0.2s;
+    &:hover {
+      background: #376b44;
+      transition: 0.2s;
+      color: white;
+    }
   }
 }
 
@@ -103,44 +153,47 @@
     &__wrapper {
       padding-top: 35px;
       display: grid;
-      grid-template-columns: repeat(auto-fill, 330px);
+      grid-template-columns: repeat(auto-fill, 310px);
       grid-gap: 30px;
-      height: 2250px;
-      width: 690px;
     }
 
-    &__layout {
-      width: 330px;
+    &__content {
       padding: 20px 20px;
+      width: 100%;
+    }
+        &__img {
+      width: 100%;
+      min-height: 422px;
     }
 
-    &__img {
-      width: 290px;
-    }
+  }
+}
+
+.section{
+  &__title{
+    font-size: 30px;
+  }
+
+  &__button{
+    font-size: 20px;
   }
 }
 
 @media (max-width: 720px) {
   .products {
-    width: 530px;
     padding-bottom: 50px;
 
     &__wrapper {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      max-height: 1805px;
       grid-gap: 30px;
       padding-top: 20px;
-      max-width: 510px;
     }
 
-    &__layout {
-      max-width: 240px;
-      min-height: 514px;
-    }
 
     &__img {
-      width: 200px;
+      width: 100%;
+      min-height: 250px;
     }
 
     &__author {
@@ -148,8 +201,7 @@
     }
 
     &__content {
-      height: 514px;
-      width: 240px;
+      width: 100%;
     }
 
     &__name {
@@ -169,11 +221,27 @@
 
     &__buy {
       display: flex;
-      max-width: 200px;
+      max-width: 100%;
       max-height: 50px;
       padding: 20px 30px;
       justify-content: center;
       align-items: center;
+      font-size: 18px;
+    }
+  }
+
+  .section{
+    &__wrapper{
+      flex-direction: column;
+      align-items: start;
+    }
+    &__title{
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    &__button{
+      padding: 10px 20px;
       font-size: 18px;
     }
   }

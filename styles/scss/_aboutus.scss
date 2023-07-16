@@ -4,18 +4,14 @@
 
   &__main {
     display: flex;
-    max-width: 1110px;
   }
 
   &__img-hand {
     margin-right: 30px;
-    width: 361px;
-    height: 445px;
+    max-width: 361px;
+    max-height: 445px;
   }
 
-  &__info {
-    min-width: 635px;
-  }
 
   &__title {
     color: #2c2d35;
@@ -26,9 +22,6 @@
     margin-bottom: 20px;
   }
 
-  &__wrapper {
-    width: 1110px;
-  }
 
   &__subtitle {
     color: #2c2d35;
@@ -37,7 +30,6 @@
     font-weight: 500;
     line-height: 150%;
     margin-bottom: 20px;
-    width: 635px;
   }
 
   &__team {
@@ -77,12 +69,8 @@
       flex-direction: column;
       max-width: 510px;
     }
-    &__wrapper {
-      width: 510px;
-    }
 
     &__info {
-      min-width: 510px;
       margin-top: 30px;
     }
 
@@ -91,7 +79,6 @@
     }
 
     &__subtitle {
-      width: 510px;
       font-size: 16px;
     }
   }
@@ -110,22 +97,16 @@
 
     &__info {
       margin-top: 40px;
-      max-width: 690px;
     }
 
     &__title {
-      max-width: 211px;
       font-size: 30px;
       margin-bottom: 30px;
     }
 
     &__subtitle {
       font-size: 18px;
-      max-width: 635px;
     }
 
-    &__wrapper {
-      max-width: 690px;
-    }
   }
 }

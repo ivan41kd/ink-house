@@ -94,8 +94,6 @@ a {
 
 @media (max-width: 768px) {
   .header {
-    min-width: 768px;
-    flex-shrink: 0;
     padding: 33px 39px 32px 39px;
   }
   .header__item {
@@ -104,8 +102,8 @@ a {
 }
 @media (max-width: 720px) {
   .header {
-    padding: 16px 0px;
     min-width: 720px;
+    padding: 16px 0px;
   }
   .header__logo-title {
     margin-bottom: 33.5px;
@@ -160,6 +158,12 @@ a {
   border: 0;
   color: #2c2d35;
   line-height: normal;
+  transition: 0.2s;
+}
+.article__button:hover {
+  background: #376b44;
+  transition: 0.2s;
+  color: white;
 }
 
 @media (max-width: 768px) {
@@ -190,40 +194,39 @@ a {
     padding: 10px 20px;
   }
 }
-.section {
+.intro {
   color: #2c2d35;
   background: #f4f6f5;
   padding-bottom: 30px;
 }
-.section__main {
+.intro__main {
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
-.section__img {
-  margin-right: 30px;
+.intro__img {
   max-height: 621px;
   max-width: 540px;
+  -o-object-position: center;
+     object-position: center;
 }
-.section__titles {
-  padding-top: 145px;
-}
-.section__title {
-  max-width: 540px;
+.intro__title {
   font-size: 60px;
   font-weight: 500;
   line-height: 110%;
   margin-bottom: 20px;
 }
-.section__green {
+.intro__green {
   color: #598d66;
 }
-.section__subtitle {
+.intro__subtitle {
   color: #86928b;
   font-weight: 500;
   line-height: 150%;
   margin-bottom: 60px;
   font-size: 18px;
 }
-.section__button {
+.intro__button {
   color: #598d66;
   font-size: 20px;
   font-family: "Raleway", sans-serif;
@@ -233,54 +236,54 @@ a {
   align-items: center;
   border: 1px solid #598d66;
   background: transparent;
+  transition: 0.2s;
+}
+.intro__button:hover {
+  background: #376b44;
+  color: white;
+  transition: 0.2s;
 }
 
 @media (max-width: 768px) {
-  .section {
-    max-width: 768px;
-  }
-  .section__main {
-    max-width: 510px;
-  }
-  .section__img {
-    width: 330px;
+  .intro__img {
+    max-width: 100%;
     height: 380px;
   }
-  .section__titles {
-    padding-top: 35px;
-  }
-  .section__title {
+  .intro__title {
     font-size: 40px;
     max-width: 330px;
   }
-  .section__subtitle {
+  .intro__subtitle {
     margin-bottom: 40px;
   }
 }
 @media (max-width: 720px) {
-  .section {
+  .intro {
     padding-bottom: 50px;
-    max-width: 610px;
   }
-  .section__img {
-    max-width: 195px;
-    max-height: 239px;
+  .intro__img {
+    max-width: 100%;
+    height: 239px;
     margin-top: 50px;
   }
-  .section__titles {
+  .intro__main {
+    align-items: center;
+    justify-content: center;
+  }
+  .intro__titles {
     padding-top: 50px;
   }
-  .section__title {
+  .intro__title {
     font-size: 36px;
     max-width: 285px;
     margin-bottom: 10px;
   }
-  .section__subtitle {
+  .intro__subtitle {
     font-size: 16px;
     margin-bottom: 10px;
     max-width: 285px;
   }
-  .section__button {
+  .intro__button {
     font-size: 18px;
     padding: 20px 60px;
     width: 178px;
@@ -298,17 +301,19 @@ a {
 .products__wrapper {
   padding-top: 30px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-gap: 30px;
-}
-.products__layout {
-  min-height: 730px;
-  background: #e1ede6;
-  padding: 20px 20px 30px;
-  max-width: 350px;
 }
 .products__img {
   margin-bottom: 20px;
+  width: 100%;
+  min-height: 422px;
+  text-align: center;
+  background-color: lightgrey;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .products__author {
   color: #86928b;
@@ -369,6 +374,16 @@ a {
   border: 1px solid #598d66;
   background: transparent;
   margin-top: auto;
+  transition: 0.2s;
+}
+.products__buy:hover {
+  background: #376b44;
+  color: white;
+  transition: 0.2s;
+}
+.products__text {
+  display: flex;
+  flex-direction: column;
 }
 .products__content {
   display: flex;
@@ -376,6 +391,44 @@ a {
   -webkit-line-clamp: 2;
   overflow: hidden;
   text-overflow: ellipsis;
+  background: #e1ede6;
+  padding: 20px 20px 30px;
+  width: 100%;
+}
+
+.section__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section__title {
+  color: #2c2d35;
+  font-size: 40px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  line-height: 110%;
+}
+.section__menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 32px;
+}
+.section__button {
+  height: 43px;
+  padding: 5px 20px;
+  border-radius: 1000px;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  background: #d4e8d9;
+  border: 0;
+  color: #2c2d35;
+  line-height: normal;
+  transition: 0.2s;
+}
+.section__button:hover {
+  background: #376b44;
+  transition: 0.2s;
+  color: white;
 }
 
 @media (max-width: 768px) {
@@ -386,45 +439,44 @@ a {
   .products__wrapper {
     padding-top: 35px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 330px);
+    grid-template-columns: repeat(auto-fill, 310px);
     grid-gap: 30px;
-    height: 2250px;
-    width: 690px;
   }
-  .products__layout {
-    width: 330px;
+  .products__content {
     padding: 20px 20px;
+    width: 100%;
   }
   .products__img {
-    width: 290px;
+    width: 100%;
+    min-height: 422px;
   }
 }
+.section__title {
+  font-size: 30px;
+}
+.section__button {
+  font-size: 20px;
+}
+
 @media (max-width: 720px) {
   .products {
-    width: 530px;
     padding-bottom: 50px;
   }
   .products__wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    max-height: 1805px;
     grid-gap: 30px;
     padding-top: 20px;
-    max-width: 510px;
-  }
-  .products__layout {
-    max-width: 240px;
-    min-height: 514px;
   }
   .products__img {
-    width: 200px;
+    width: 100%;
+    min-height: 250px;
   }
   .products__author {
     font-size: 16px;
   }
   .products__content {
-    height: 514px;
-    width: 240px;
+    width: 100%;
   }
   .products__name {
     font-size: 24px;
@@ -440,11 +492,23 @@ a {
   }
   .products__buy {
     display: flex;
-    max-width: 200px;
+    max-width: 100%;
     max-height: 50px;
     padding: 20px 30px;
     justify-content: center;
     align-items: center;
+    font-size: 18px;
+  }
+  .section__wrapper {
+    flex-direction: column;
+    align-items: start;
+  }
+  .section__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .section__button {
+    padding: 10px 20px;
     font-size: 18px;
   }
 }
@@ -453,11 +517,12 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  width: 100%;
+  padding-bottom: 70px;
+  padding-top: 70px;
 }
 .novelties__logo-title {
   display: flex;
-  max-width: 521px;
-  padding-top: 70px;
   align-items: center;
   margin-bottom: 10px;
 }
@@ -473,17 +538,14 @@ a {
   font-weight: 500;
   line-height: 100%;
   margin-bottom: 10px;
-  width: 421px;
 }
 .novelties__description {
   color: #fff;
   font-size: 18px;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
-  line-height: 150%;
-  max-width: 540px;
+  line-height: 27px;
   margin-bottom: 81px;
-  min-height: 209px;
 }
 .novelties__more {
   color: #2c2d35;
@@ -495,13 +557,17 @@ a {
   padding: 20px 60px;
   height: 65px;
   border: none;
-  margin-bottom: 70px;
+  transition: 0.2s;
+}
+.novelties__more:hover {
+  background: #d9b949;
+  transition: 0.2s;
 }
 
 @media (max-width: 720px) {
   .novelties {
     background-size: cover;
-    max-width: 720px;
+    min-width: 720px;
     height: 502px;
   }
   .novelties__logo-title {
@@ -525,7 +591,7 @@ a {
 }
 @media (max-width: 768px) {
   .novelties {
-    width: 768px;
+    height: 502px;
   }
 }
 .aboutus {
@@ -534,15 +600,11 @@ a {
 }
 .aboutus__main {
   display: flex;
-  max-width: 1110px;
 }
 .aboutus__img-hand {
   margin-right: 30px;
-  width: 361px;
-  height: 445px;
-}
-.aboutus__info {
-  min-width: 635px;
+  max-width: 361px;
+  max-height: 445px;
 }
 .aboutus__title {
   color: #2c2d35;
@@ -552,9 +614,6 @@ a {
   line-height: 110%;
   margin-bottom: 20px;
 }
-.aboutus__wrapper {
-  width: 1110px;
-}
 .aboutus__subtitle {
   color: #2c2d35;
   font-size: 18px;
@@ -562,7 +621,6 @@ a {
   font-weight: 500;
   line-height: 150%;
   margin-bottom: 20px;
-  width: 635px;
 }
 .aboutus__team {
   display: flex;
@@ -599,18 +657,13 @@ a {
     flex-direction: column;
     max-width: 510px;
   }
-  .aboutus__wrapper {
-    width: 510px;
-  }
   .aboutus__info {
-    min-width: 510px;
     margin-top: 30px;
   }
   .aboutus__title {
     font-size: 24px;
   }
   .aboutus__subtitle {
-    width: 510px;
     font-size: 16px;
   }
 }
@@ -624,19 +677,13 @@ a {
   }
   .aboutus__info {
     margin-top: 40px;
-    max-width: 690px;
   }
   .aboutus__title {
-    max-width: 211px;
     font-size: 30px;
     margin-bottom: 30px;
   }
   .aboutus__subtitle {
     font-size: 18px;
-    max-width: 635px;
-  }
-  .aboutus__wrapper {
-    max-width: 690px;
   }
 }
 .footer {
@@ -692,7 +739,7 @@ a {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   line-height: 150%;
-  padding-bottom: 6px;
+  margin-bottom: 6px;
 }
 .footer__menu {
   display: flex;
@@ -703,10 +750,10 @@ a {
   justify-content: space-between;
 }
 .footer__category {
-  padding-right: 58px;
+  margin-right: 58px;
 }
 .footer__category:nth-child(3) {
-  padding-right: 0px;
+  margin-right: 0px;
 }
 .footer__social {
   max-width: 132px;
@@ -738,19 +785,16 @@ a {
 
 @media (max-width: 720px) {
   .footer {
-    max-width: 720px;
+    min-width: 720px;
   }
   .footer__wrapper {
     flex-direction: column;
-    width: 576px;
   }
   .footer__left {
     display: flex;
-    width: 510px;
     justify-content: space-between;
   }
   .footer__menu {
-    width: 510px;
     justify-content: space-between;
     align-items: flex-start;
   }
@@ -763,14 +807,14 @@ a {
   .footer__nav {
     margin-bottom: 16px;
     position: relative;
-    width: 510px;
+    border-bottom: #2c2d35;
   }
   .footer__social {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    margin-left: 210px;
+    margin: 0 auto;
   }
   .footer__social:after {
     position: absolute;
@@ -784,9 +828,6 @@ a {
   }
 }
 @media (max-width: 768px) {
-  .footer {
-    width: 768px;
-  }
   .footer__wrapper {
     flex-wrap: wrap;
     flex-grow: 3;

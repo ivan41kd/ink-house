@@ -3,11 +3,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  width: 100%;
+  padding-bottom: 70px;
+  padding-top:70px;
 
   &__logo-title {
     display: flex;
-    max-width: 521px;
-    padding-top: 70px;
     align-items: center;
     margin-bottom: 10px;
   }
@@ -25,7 +26,6 @@
     font-weight: 500;
     line-height: 100%;
     margin-bottom: 10px;
-    width: 421px;
   }
 
   &__description {
@@ -33,10 +33,8 @@
     font-size: 18px;
     font-family: "Raleway", sans-serif;
     font-weight: 500;
-    line-height: 150%;
-    max-width: 540px;
+    line-height: 27px;
     margin-bottom: 81px;
-    min-height: 209px;
   }
 
   &__more {
@@ -49,14 +47,18 @@
     padding: 20px 60px;
     height: 65px;
     border: none;
-    margin-bottom: 70px;
+    transition: 0.2s;
+    &:hover {
+      background: #d9b949;
+      transition: 0.2s;
+    }
   }
 }
 
 @media (max-width: 720px) {
   .novelties {
     background-size: cover;
-    max-width: 720px;
+    min-width: 720px;
     height: 502px;
     &__logo-title {
       min-width: 331px;
@@ -81,8 +83,8 @@
   }
 }
 
-@media (max-width:768px){
-  .novelties{
-    width: 768px;
+@media (max-width: 768px) {
+  .novelties {
+    height: 502px;
   }
 }

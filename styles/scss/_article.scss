@@ -29,6 +29,12 @@
     border: 0;
     color: #2c2d35;
     line-height: normal;
+    transition: 0.2s;
+    &:hover {
+      background: #376b44;
+      transition: 0.2s;
+      color: white;
+    }
   }
 }
 

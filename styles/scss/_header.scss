@@ -43,6 +43,7 @@
     margin-right: 0px;
     border: 0;
     background: transparent;
+
   }
 
   &__item {
@@ -56,8 +57,6 @@
 
 @media (max-width: 768px) {
   .header {
-    min-width: 768px;
-    flex-shrink: 0;
     padding: 33px 39px 32px 39px;
     &__item {
       font-size: 18px;
@@ -67,8 +66,8 @@
 
 @media (max-width: 720px) {
   .header {
-    padding: 16px 0px;
     min-width: 720px;
+    padding: 16px 0px;
 
     &__logo-title {
       margin-bottom: 33.5px;

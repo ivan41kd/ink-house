@@ -5,7 +5,7 @@
   background-size: cover;
   width: 100%;
   padding-bottom: 70px;
-  padding-top:70px;
+  padding-top: 70px;
 
   &__logo-title {
     display: flex;
@@ -58,10 +58,7 @@
 @media (max-width: 720px) {
   .novelties {
     background-size: cover;
-    min-width: 720px;
-    height: 502px;
     &__logo-title {
-      min-width: 331px;
       padding-top: 51px;
     }
 
@@ -83,8 +80,27 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 515px) {
   .novelties {
-    height: 502px;
+    &__logo-title {
+      padding-top: 50px;
+    }
+    &__logo {
+      margin-right: 10px;
+    }
+    &__title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    &__description {
+      font-size: 16px;
+    }
+
+    &__more {
+      width: 290px;
+      height: 50px;
+      font-size: 18px;
+    }
   }
 }

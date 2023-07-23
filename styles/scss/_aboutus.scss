@@ -12,7 +12,6 @@
     max-height: 445px;
   }
 
-
   &__title {
     color: #2c2d35;
     font-size: 40px;
@@ -21,7 +20,6 @@
     line-height: 110%;
     margin-bottom: 20px;
   }
-
 
   &__subtitle {
     color: #2c2d35;
@@ -93,6 +91,7 @@
     &__img-hand {
       max-height: 510px;
       max-width: 413px;
+      margin-right: 0px;
     }
 
     &__info {
@@ -107,6 +106,28 @@
     &__subtitle {
       font-size: 18px;
     }
+  }
+}
 
+@media (min-width: 320px) and (max-width: 515px) {
+  .aboutus {
+    &__img-hand {
+      max-width: 234px;
+      max-height: 290px;
+      margin-right: 0px;
+    }
+
+    &__info{
+      margin-top: 30px;
+    }
+
+    &__title{
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    &__subtitle{
+      font-size: 16px;
+    }
   }
 }

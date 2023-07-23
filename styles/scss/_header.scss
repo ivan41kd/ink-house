@@ -43,7 +43,11 @@
     margin-right: 0px;
     border: 0;
     background: transparent;
-
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.2);
+      transition: 0.3s;
+    }
   }
 
   &__item {
@@ -53,6 +57,9 @@
       margin-right: 0;
     }
   }
+  &__burger {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -61,16 +68,22 @@
     &__item {
       font-size: 18px;
     }
+    &__burger {
+      display: none;
+    }
   }
 }
 
 @media (max-width: 720px) {
   .header {
-    min-width: 720px;
     padding: 16px 0px;
 
     &__logo-title {
       margin-bottom: 33.5px;
+    }
+
+    &__burger {
+      display: none;
     }
 
     &__item {
@@ -99,6 +112,113 @@
     }
     &__wrapper {
       flex-direction: column;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 515px) {
+  .header {
+    padding: 0 16px;
+
+    .container {
+      padding: 16px;
+    }
+    &__logo-title {
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    &__nav {
+      width: 100%;
+      background-color: aqua;
+      display: none;
+    }
+
+    &__burger {
+      display: block;
+    }
+
+    &__burger-line {
+      width: 30px;
+      height: 3px;
+      background: #4c5866;
+      border-radius: 15%;
+      position: absolute;
+      left: 10px;
+      top: 60px;
+      z-index: 99;
+
+      &:not(:last-of-type) {
+        margin-bottom: 10px;
+      }
+
+      &::after {
+        content: "";
+        width: 30px;
+        height: 3px;
+        background: #4c5866;
+        display: block;
+        margin-top: 8px;
+      }
+      &::before {
+        content: "";
+        width: 30px;
+        height: 3px;
+        background: #4c5866;
+        display: block;
+        margin-top: 11px;
+      }
+    }
+
+    &__burger-chk {
+      position: fixed;
+      top: 60px;
+      left: 10px;
+      width: 30px;
+      height: 20px;
+      z-index: 100;
+      opacity: 0;
+
+      &:checked ~ &__burger-list {
+        transform: translateX(0);
+      }
+    }
+
+    &__burger-list {
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      top: 100px;
+      right: 0px;
+      bottom: 0;
+      background: #e1ede6;
+      transform: translateX(-100%);
+      transition: 0.3s;
+    }
+
+    &__burger-item {
+      padding: 50px;
+      transition: 0.3s;
+    }
+
+    &__burger-shopping {
+      max-width: 22px;
+      margin-right: 0px;
+      border: 0;
+      background: transparent;
+      position: absolute;
+      right: 20px;
+      top: 60px;
+      &:hover {
+        transform: scale(1.2);
+        transition: 0.3s;
+      }
+    }
+
+    &__burger-chk:checked ~ &__burger-list {
+      transform: translateX(0);
+      transition: 0.3s;
     }
   }
 }

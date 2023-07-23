@@ -3,7 +3,6 @@
   padding-top: 39px;
 
   &__wrapper {
-    padding-top: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-gap: 30px;
@@ -67,6 +66,7 @@
     font-family: "Raleway", sans-serif;
     font-weight: 500;
     line-height: normal;
+    margin-top: auto;
     margin-bottom: 20px;
   }
 
@@ -81,7 +81,6 @@
     padding: 20px 60px;
     border: 1px solid #598d66;
     background: transparent;
-    margin-top: auto;
     transition: 0.2s;
     &:hover {
       background: #376b44;
@@ -113,6 +112,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
   }
   &__title {
     color: #2c2d35;
@@ -147,7 +147,6 @@
 
 @media (max-width: 768px) {
   .products {
-    width: 690px;
     padding-top: 0px;
 
     &__wrapper {
@@ -161,20 +160,19 @@
       padding: 20px 20px;
       width: 100%;
     }
-        &__img {
+    &__img {
       width: 100%;
       min-height: 422px;
     }
-
   }
 }
 
-.section{
-  &__title{
+.section {
+  &__title {
     font-size: 30px;
   }
 
-  &__button{
+  &__button {
     font-size: 20px;
   }
 }
@@ -189,7 +187,6 @@
       grid-gap: 30px;
       padding-top: 20px;
     }
-
 
     &__img {
       width: 100%;
@@ -230,19 +227,43 @@
     }
   }
 
-  .section{
-    &__wrapper{
+  .section {
+    &__wrapper {
       flex-direction: column;
       align-items: start;
     }
-    &__title{
+    &__title {
       font-size: 24px;
       margin-bottom: 20px;
     }
 
-    &__button{
+    &__button {
       padding: 10px 20px;
       font-size: 18px;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 515px) {
+  .section {
+    &__menu {
+      overflow: auto;
+      gap: 0 20px;
+      width: 250px;
+    }
+
+    &__wrapper {
+      margin-bottom: 20px;
+    }
+  }
+
+  .products {
+    &__wrapper {
+      padding-top: 0px;
+    }
+
+    &__img {
+      width: 100%;
     }
   }
 }

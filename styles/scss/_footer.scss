@@ -43,7 +43,7 @@
     font-family: "Raleway", sans-serif;
     font-weight: 500;
     line-height: normal;
-    padding-bottom: 6px;
+    margin-bottom: 6px;
     transition: 0.2s;
 
     &:hover {
@@ -63,7 +63,6 @@
 
   &__menu {
     display: flex;
-    width: 445px;
   }
 
   &__wrapper {
@@ -72,19 +71,21 @@
   }
 
   &__category {
-    margin-right: 58px;
+    margin-right: 60px;
     &:nth-child(3) {
       margin-right: 0px;
     }
   }
 
-  &__social {
-    max-width: 132px;
-  }
-
   &__icon {
     width: 24px;
     height: 24px;
+    transition: 0.3s;
+
+    &:hover{
+      transform: scale(1.2);
+      transition: 0.3s;
+    }
   }
 
   &__icons {
@@ -113,8 +114,6 @@
 
 @media (max-width: 720px) {
   .footer {
-    min-width: 720px;
-
     &__wrapper {
       flex-direction: column;
     }
@@ -122,11 +121,6 @@
     &__left {
       display: flex;
       justify-content: space-between;
-    }
-
-    &__menu {
-      justify-content: space-between;
-      align-items: flex-start;
     }
 
     &__item {
@@ -137,29 +131,20 @@
       font-size: 20px;
     }
 
+    &__menu {
+      justify-content: space-between;
+    }
+
     &__nav {
       margin-bottom: 16px;
-      position: relative;
-      border-bottom: #2c2d35;
+      border-bottom: 1px solid #c3d1c6;
     }
 
     &__social {
       display: inline-flex;
       flex-direction: column;
       align-items: center;
-      position: relative;
       margin: 0 auto;
-      &:after {
-        position: absolute;
-        content: "";
-        display: block;
-        top: -17.5px;
-
-        width: 550px;
-        height: 1px;
-        background: #c3d1c6;
-        align-items: center;
-      }
     }
   }
 }
@@ -175,14 +160,58 @@
       padding: 23px 39px;
     }
 
+    &__category {
+      margin-right: 60px;
+    }
+
     &__left {
       display: flex;
       justify-content: space-between;
       flex-grow: 1;
     }
+  }
+}
 
-    &__nav {
+@media (min-width: 320px) and (max-width: 515px) {
+  .footer {
+    padding: 20px;
+    &__container {
+      padding: 20px 15px;
+    }
+
+    &__wrapper {
+      flex-wrap: wrap;
+      flex-grow: 4;
+    }
+
+    &__left {
+      flex-direction: column;
+    }
+
+    &__menu {
       display: flex;
+      flex-wrap: wrap;
+    }
+    &__nav{
+      display: flex;
+    }
+
+    &__phone {
+      font-size: 16px;
+    }
+
+    &__workshop {
+      font-size: 16px;
+    }
+
+    &__rights,
+    &__name {
+      font-size: 12px;
+    }
+
+    &__text {
+      display: flex;
+      gap: 0 2px;
     }
   }
 }

@@ -152,6 +152,8 @@ a {
 @media (min-width: 320px) and (max-width: 515px) {
   .header {
     padding: 0 16px;
+    position: fixed;
+    width: 100%;
   }
   .header .container {
     padding: 16px;
@@ -209,6 +211,15 @@ a {
   }
   .header__burger-chk:checked ~ .header__burger-chk__burger-list {
     transform: translateX(0);
+  }
+  .header__burger-chk:checked ~ .header__burger-line::before {
+    transform: rotate(-90deg) translateY(10%) translateX(40%);
+  }
+  .header__burger-chk:checked ~ .header__burger-line {
+    transform: rotate(-45deg) translateY(230%) translateX(-50%);
+  }
+  .header__burger-chk:checked ~ .header__burger-line::after {
+    display: none;
   }
   .header__burger-list {
     width: 100%;
@@ -407,6 +418,9 @@ a {
   }
 }
 @media (min-width: 320px) and (max-width: 515px) {
+  .intro {
+    padding-top: 60px;
+  }
   .intro__img {
     display: none;
   }
@@ -648,7 +662,7 @@ a {
   .section__menu {
     overflow: auto;
     gap: 0 20px;
-    width: 250px;
+    max-width: 280px;
   }
   .section__wrapper {
     margin-bottom: 20px;
@@ -661,15 +675,14 @@ a {
   }
 }
 .novelties {
-  background-image: -webkit-image-set(url("./novelties.webp") 1x, url("./novelties@2x.webp") 2x);
-  background-image: image-set(url("./novelties.webp") 1x, url("./novelties@2x.webp") 2x);
+  background: linear-gradient(to right, rgba(16, 28, 37, 0.9) 10%, rgba(255, 255, 255, 0) 100%), -webkit-image-set(url("../../img/novelties/novelties-background.webp") 1x, url("../../img/novelties/novelties-background@2x.webp") 2x);
+  background: linear-gradient(to right, rgba(16, 28, 37, 0.9) 10%, rgba(255, 255, 255, 0) 100%), image-set(url("../../img/novelties/novelties-background.webp") 1x, url("../../img/novelties/novelties-background@2x.webp") 2x);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 574px;
-  padding-bottom: 70px;
-  padding-top: 70px;
+  padding: 70px 0 70px;
 }
 .novelties__logo-title {
   display: flex;
@@ -719,9 +732,6 @@ a {
   .novelties {
     background-size: cover;
   }
-  .novelties__logo-title {
-    padding-top: 51px;
-  }
   .novelties__description {
     margin-bottom: 20px;
   }
@@ -738,8 +748,8 @@ a {
   }
 }
 @media (min-width: 320px) and (max-width: 515px) {
-  .novelties__logo-title {
-    padding-top: 50px;
+  .novelties {
+    padding: 50px 0px 50px;
   }
   .novelties__logo {
     margin-right: 10px;

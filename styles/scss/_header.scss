@@ -119,6 +119,8 @@
 @media (min-width: 320px) and (max-width: 515px) {
   .header {
     padding: 0 16px;
+    position: fixed;
+    width: 100%;
 
     .container {
       padding: 16px;
@@ -182,6 +184,18 @@
 
       &:checked ~ &__burger-list {
         transform: translateX(0);
+      }
+
+      &:checked ~ .header__burger-line::before {
+        transform: rotate(-90deg) translateY(10%) translateX(40%);
+      }
+
+      &:checked ~ .header__burger-line {
+        transform: rotate(-45deg) translateY(230%) translateX(-50%);
+      }
+
+      &:checked ~ .header__burger-line::after {
+        display: none;
       }
     }
 

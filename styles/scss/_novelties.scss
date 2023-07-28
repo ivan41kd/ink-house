@@ -1,16 +1,19 @@
 .novelties {
-  background-image: image-set(
-    url("./novelties.webp") 1x,
-    url("./novelties@2x.webp") 2x
-  );
+  background: linear-gradient(
+      to right,
+      rgba(16, 28, 37, 0.9) 10%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    image-set(
+      url("../../img/novelties/novelties-background.webp") 1x,
+      url("../../img/novelties/novelties-background@2x.webp") 2x
+    );
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 574px;
-  padding-bottom: 70px;
-  padding-top: 70px;
-
+  padding: 70px 0 70px;
   &__logo-title {
     display: flex;
     align-items: center;
@@ -63,9 +66,6 @@
 @media (max-width: 720px) {
   .novelties {
     background-size: cover;
-    &__logo-title {
-      padding-top: 51px;
-    }
 
     &__description {
       margin-bottom: 20px;
@@ -87,8 +87,8 @@
 
 @media (min-width: 320px) and (max-width: 515px) {
   .novelties {
+    padding: 50px 0px 50px;
     &__logo-title {
-      padding-top: 50px;
     }
     &__logo {
       margin-right: 10px;

@@ -154,6 +154,7 @@ a {
     padding: 0 16px;
     position: fixed;
     width: 100%;
+    z-index: 50;
   }
   .header .container {
     padding: 16px;
@@ -749,7 +750,7 @@ a {
 }
 @media (min-width: 320px) and (max-width: 515px) {
   .novelties {
-    padding: 50px 0px 50px;
+    padding: 50px 0px 0px;
   }
   .novelties__logo {
     margin-right: 10px;
@@ -974,6 +975,9 @@ a {
   font-weight: 500;
   line-height: 120%;
 }
+.footer__wrapper-mobile {
+  display: none;
+}
 
 @media (max-width: 720px) {
   .footer__wrapper {
@@ -1022,14 +1026,19 @@ a {
 }
 @media (min-width: 320px) and (max-width: 515px) {
   .footer {
-    padding: 20px;
+    padding: 20px 15px;
   }
   .footer__container {
     padding: 20px 15px;
   }
+  .footer__wrapper-mobile {
+    display: block;
+  }
   .footer__wrapper {
-    flex-wrap: wrap;
-    flex-grow: 4;
+    display: none;
+  }
+  .footer__logo-title {
+    margin-bottom: 28px;
   }
   .footer__left {
     flex-direction: column;
@@ -1053,5 +1062,29 @@ a {
   .footer__text {
     display: flex;
     gap: 0 2px;
+  }
+  .footer__contact {
+    width: 100%;
+  }
+  .footer__mobile-top {
+    gap: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer__category {
+    margin-right: 0;
+  }
+  .footer__nav-name {
+    font-size: 16px;
+  }
+  .footer__mobile-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 40px;
+    border-bottom: 1px solid #c3d1c6;
+  }
+  .footer__social {
+    width: 100%;
+    margin-top: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
